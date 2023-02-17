@@ -1,0 +1,59 @@
+server name=lab505-158,port_no=11111
+============= tpcc_scale_params ===========
+num_warehouses=15,starting_warehouse_=1,ending_warehouse_=15
+partition_id_0
+scale_factor_=10
+num_items_=10000
+num_districts_per_warehouse_=10
+num_customers_per_district_=300
+num_new_orders_per_district_=90
+dist_ratio=1, gStandard=1, gForceRandomAccess=0, gTimeLocality=0, gReadRatio=0
+============= end ===========
+GAllocator config info: is_master=1,master_ip=10.77.110.158,master_port=12345,worker_ip=10.77.110.158,worker_port=12346
+[1573691] 09 Jan 09:07:33.786 - [worker.cc:117-Worker()] LRU eviction is enabled, max cache lines = 5033164, reserved mem size = 17179869184, cache_percentage = 0.150000, block_size = 512
+create default gallocator
+create epoch gallocator
+storage_addr=281475022798848
+epoch_addr=281474988244480
+monotone_ts_addr=281474988243968
+start population
+table_id=0, size=16.95MB
+table_id=1, size=61.35MB
+table_id=2, size=0.00216MB
+table_id=3, size=0.0228MB
+table_id=4, size=0.00195MB
+table_id=5, size=0.1755MB
+table_id=6, size=1.665MB
+table_id=7, size=34.6787MB
+table_id=8, size=34.56MB
+table_id=9, size=3.105MB
+populate elapsed time=5550ms
+read/write access count
+total_read_access_count	1253075
+total_write_access_count	2784185
+total_read_ratio	0.310378
+source elapsed time=388ms
+start process query
+start processing...
+execute_count=188002, abort_count=152, abort_rate=0.000808498
+elapsed time=13343ms.
+throughput=14.0899K tps.
+per-core throughput=0.939329K tps.
+start process query
+start processing...
+execute_count=188809, abort_count=153, abort_rate=0.000810338
+elapsed time=11332ms.
+throughput=16.6616K tps.
+per-core throughput=1.11077K tps.
+total_count=188809,total_abort_count=153,throughput=16.6616,thread_count_=15,elapsed_time=11332
+==================== perf statistics summary ====================
+agg_total_count	188809
+agg_total_abort_count	153
+abort_rate	0.000810
+per_node_elapsed_time	11332.000000
+total_throughput	16.661578
+per_node_throughput	16.661578
+per_core_throughput	1.110772
+==================== end ====================
+prepare to exit...
+over..

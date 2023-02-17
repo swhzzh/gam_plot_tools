@@ -1,0 +1,63 @@
+server name=lab505-158,port_no=11111
+server name=lab505-159,port_no=11111
+server name=lab505-160,port_no=11111
+============= tpcc_scale_params ===========
+num_warehouses=32,starting_warehouse_=1,ending_warehouse_=11
+partition_id_0
+scale_factor_=10
+num_items_=10000
+num_districts_per_warehouse_=10
+num_customers_per_district_=300
+num_new_orders_per_district_=90
+dist_ratio=20, gStandard=1, gForceRandomAccess=0, gTimeLocality=0, gReadRatio=0
+============= end ===========
+GAllocator config info: is_master=1,master_ip=10.77.110.158,master_port=12345,worker_ip=10.77.110.158,worker_port=12346
+[1271496] 05 Jan 11:26:44.306 - [worker.cc:117-Worker()] LRU eviction is enabled, max cache lines = 5033164, reserved mem size = 17179869184, cache_percentage = 0.150000, block_size = 512
+create default gallocator
+create epoch gallocator
+storage_addr=281475022798848
+epoch_addr=281474988244480
+monotone_ts_addr=281474988243968
+start population
+table_id=0, size=12.43MB
+table_id=1, size=44.99MB
+table_id=2, size=0.001584MB
+table_id=3, size=0.01672MB
+table_id=4, size=0.00143MB
+table_id=5, size=0.1287MB
+table_id=6, size=1.221MB
+table_id=7, size=25.4296MB
+table_id=8, size=25.344MB
+table_id=9, size=2.277MB
+populate elapsed time=5059ms
+read/write access count
+total_read_access_count	1250597
+total_write_access_count	2779944
+total_read_ratio	0.31028
+source elapsed time=344ms
+start process query
+start processing...
+execute_count=193985, abort_count=698, abort_rate=0.0035982
+elapsed time=11570ms.
+throughput=16.7662K tps.
+per-core throughput=4.19155K tps.
+start process query
+start processing...
+execute_count=193169, abort_count=686, abort_rate=0.00355128
+elapsed time=9604ms.
+throughput=20.1134K tps.
+per-core throughput=5.02835K tps.
+total_count=193169,total_abort_count=686,throughput=20.1134,thread_count_=4,elapsed_time=9604
+total_count=192075,total_abort_count=730,throughput=18.7702,thread_count_=4,elapsed_time=10233
+total_count=196417,total_abort_count=692,throughput=18.5948,thread_count_=4,elapsed_time=10563
+==================== perf statistics summary ====================
+agg_total_count	581661
+agg_total_abort_count	2108
+abort_rate	0.003624
+per_node_elapsed_time	10133.333333
+total_throughput	57.478358
+per_node_throughput	19.159453
+per_core_throughput	4.789863
+==================== end ====================
+prepare to exit...
+over..

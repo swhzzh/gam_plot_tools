@@ -1,0 +1,42 @@
+server name=lab505-158,port_no=11111
+server name=lab505-159,port_no=11111
+server name=lab505-160,port_no=11111
+server name=lab505-155,port_no=11111
+GAllocator config info: is_master=1,master_ip=10.77.110.158,master_port=12345,worker_ip=10.77.110.158,worker_port=12346
+[3794363] 13 Feb 18:14:42.828 - [worker.cc:124-Worker()] LRU eviction is enabled, max cache lines = 5033164, reserved mem size = 17179869184, cache_percentage = 0.150000, block_size = 512
+create default gallocator
+create epoch gallocator
+storage_addr=281475022798848
+epoch_addr=281474988244480
+monotone_ts_addr=281474988243968
+start population
+table_id=0, size=2.92971MB
+populate elapsed time=144ms
+source elapsed time=17ms
+start process query
+start processing...
+execute_count=188497, abort_count=227662, abort_rate=1.20777
+elapsed time=45616ms.
+throughput=4.13226K tps.
+per-core throughput=0.206613K tps.
+start process query
+start processing...
+execute_count=182377, abort_count=216076, abort_rate=1.18477
+elapsed time=37931ms.
+throughput=4.80813K tps.
+per-core throughput=0.240406K tps.
+total_count=182377,total_abort_count=216076,throughput=4.80813,thread_count_=20,elapsed_time=37931
+total_count=126183,total_abort_count=168663,throughput=2.59188,thread_count_=20,elapsed_time=48684
+total_count=133064,total_abort_count=190383,throughput=2.80631,thread_count_=20,elapsed_time=47416
+total_count=170307,total_abort_count=251232,throughput=3.7686,thread_count_=20,elapsed_time=45191
+==================== perf statistics summary ====================
+agg_total_count	611931
+agg_total_abort_count	826354
+abort_rate	1.350402
+per_node_elapsed_time	44805.500000
+total_throughput	13.974918
+per_node_throughput	3.493729
+per_core_throughput	0.174686
+==================== end ====================
+prepare to exit...
+over..

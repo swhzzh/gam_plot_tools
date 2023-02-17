@@ -1,0 +1,374 @@
+server name=lab505-158,port_no=11111
+server name=lab505-159,port_no=11111
+server name=lab505-160,port_no=11111
+============= tpcc_scale_params ===========
+num_warehouses=12,starting_warehouse_=1,ending_warehouse_=4
+partition_id_0
+scale_factor_=1
+num_items_=100000
+num_districts_per_warehouse_=10
+num_customers_per_district_=3000
+num_new_orders_per_district_=900
+dist_ratio=80, gStandard=1, gForceRandomAccess=0, gTimeLocality=0, gReadRatio=0
+============= end ===========
+GAllocator config info: is_master=1,master_ip=10.77.110.158,master_port=12345,worker_ip=10.77.110.158,worker_port=12346
+[1545996] 08 Jan 12:42:54.029 - [worker.cc:117-Worker()] LRU eviction is enabled, max cache lines = 5033164, reserved mem size = 17179869184, cache_percentage = 0.150000, block_size = 512
+create default gallocator
+create epoch gallocator
+storage_addr=281475022798848
+epoch_addr=281474988244480
+monotone_ts_addr=281474988243968
+start population
+table_id=0, size=45.2MB
+table_id=1, size=163.6MB
+table_id=2, size=0.000576MB
+table_id=3, size=0.00608MB
+table_id=4, size=0.00052MB
+table_id=5, size=0.468MB
+table_id=6, size=4.44MB
+table_id=7, size=92.2919MB
+table_id=8, size=92.16MB
+table_id=9, size=8.28MB
+populate elapsed time=60817ms
+**********BEGIN EXECUTION PROFILING REPORT**********
+
+avg execution_time = 0 ms
+**********END EXECUTION PROFILING REPORT**********
+
+**********BEGIN PHASE PROFILING REPORT**********
+thread_id = 0, phase = INDEX_INSERT_LOCK, elapsed_time = 2830 ms
+thread_id = 0, phase = INDEX_INSERT_MUTATE, elapsed_time = 41015 ms
+thread_id = 0, phase = INDEX_INSERT_GALLOCATE, elapsed_time = 1005 ms
+
+phase = INDEX_INSERT_LOCK, avg elapsed_time = 353 ms
+phase = INDEX_INSERT_MUTATE, avg elapsed_time = 5126 ms
+phase = INDEX_INSERT_GALLOCATE, avg elapsed_time = 125 ms
+**********END PHASE PROFILING REPORT**********
+
+**********BEGIN CC ABORT TIME PROFILING REPORT**********
+
+avg abort time = 0 ms
+**********END CC ABORT TIME PROFILING REPORT**********
+
+**********BEGIN CC TS ALLOC TIME PROFILING REPORT**********
+**********END CC TS ALLOC TIME PROFILING REPORT**********
+
+**********BEGIN GAM_OPERATION PROFILING REPORT(NOT INCLUDE INDEX RELATED OPERATIONS)**********
+
+**********END GAM_OPERATION PROFILING REPORT**********
+
+read/write access count
+total_read_access_count	1249333
+total_write_access_count	2778546
+total_read_ratio	0.310171
+source elapsed time=334ms
+start process query
+start processing...
+execute_count=192864, abort_count=38300, abort_rate=0.198585
+elapsed time=31502ms.
+throughput=6.12228K tps.
+per-core throughput=0.765285K tps.
+**********BEGIN EXECUTION PROFILING REPORT**********
+thread_id = 0, txn_id = 1, execution_time = 28439 ms
+thread_id = 0, txn_id = 2, execution_time = 3060 ms
+thread_id = 0, execution_time_total = 31499 ms
+thread_id = 1, txn_id = 1, execution_time = 28485 ms
+thread_id = 1, txn_id = 2, execution_time = 3013 ms
+thread_id = 1, execution_time_total = 31498 ms
+thread_id = 2, txn_id = 1, execution_time = 28507 ms
+thread_id = 2, txn_id = 2, execution_time = 2992 ms
+thread_id = 2, execution_time_total = 31499 ms
+thread_id = 3, txn_id = 1, execution_time = 28561 ms
+thread_id = 3, txn_id = 2, execution_time = 2937 ms
+thread_id = 3, execution_time_total = 31498 ms
+thread_id = 4, txn_id = 1, execution_time = 28422 ms
+thread_id = 4, txn_id = 2, execution_time = 3078 ms
+thread_id = 4, execution_time_total = 31500 ms
+thread_id = 5, txn_id = 1, execution_time = 28710 ms
+thread_id = 5, txn_id = 2, execution_time = 2788 ms
+thread_id = 5, execution_time_total = 31498 ms
+thread_id = 6, txn_id = 1, execution_time = 28375 ms
+thread_id = 6, txn_id = 2, execution_time = 3123 ms
+thread_id = 6, execution_time_total = 31498 ms
+thread_id = 7, txn_id = 1, execution_time = 28432 ms
+thread_id = 7, txn_id = 2, execution_time = 3068 ms
+thread_id = 7, execution_time_total = 31500 ms
+
+avg execution_time = 31498 ms
+**********END EXECUTION PROFILING REPORT**********
+
+**********BEGIN PHASE PROFILING REPORT**********
+thread_id = 0, phase = INDEX_READ, elapsed_time = 6199 ms
+thread_id = 0, phase = CC_SELECT, elapsed_time = 12471 ms
+thread_id = 0, phase = CC_INSERT, elapsed_time = 17 ms
+thread_id = 0, phase = CC_COMMIT, elapsed_time = 11486 ms
+thread_id = 1, phase = INDEX_READ, elapsed_time = 6066 ms
+thread_id = 1, phase = CC_SELECT, elapsed_time = 12393 ms
+thread_id = 1, phase = CC_INSERT, elapsed_time = 17 ms
+thread_id = 1, phase = CC_COMMIT, elapsed_time = 11806 ms
+thread_id = 2, phase = INDEX_READ, elapsed_time = 10311 ms
+thread_id = 2, phase = CC_SELECT, elapsed_time = 8069 ms
+thread_id = 2, phase = CC_INSERT, elapsed_time = 17 ms
+thread_id = 2, phase = CC_COMMIT, elapsed_time = 11956 ms
+thread_id = 3, phase = INDEX_READ, elapsed_time = 5860 ms
+thread_id = 3, phase = CC_SELECT, elapsed_time = 8568 ms
+thread_id = 3, phase = CC_INSERT, elapsed_time = 20 ms
+thread_id = 3, phase = CC_COMMIT, elapsed_time = 11806 ms
+thread_id = 4, phase = INDEX_READ, elapsed_time = 6133 ms
+thread_id = 4, phase = CC_SELECT, elapsed_time = 8327 ms
+thread_id = 4, phase = CC_INSERT, elapsed_time = 17 ms
+thread_id = 4, phase = CC_COMMIT, elapsed_time = 15624 ms
+thread_id = 5, phase = INDEX_READ, elapsed_time = 6014 ms
+thread_id = 5, phase = CC_SELECT, elapsed_time = 8608 ms
+thread_id = 5, phase = CC_INSERT, elapsed_time = 18 ms
+thread_id = 5, phase = CC_COMMIT, elapsed_time = 11650 ms
+thread_id = 6, phase = INDEX_READ, elapsed_time = 6346 ms
+thread_id = 6, phase = CC_SELECT, elapsed_time = 12536 ms
+thread_id = 6, phase = CC_INSERT, elapsed_time = 15 ms
+thread_id = 6, phase = CC_COMMIT, elapsed_time = 11380 ms
+thread_id = 7, phase = INDEX_READ, elapsed_time = 6209 ms
+thread_id = 7, phase = CC_SELECT, elapsed_time = 12662 ms
+thread_id = 7, phase = CC_INSERT, elapsed_time = 16 ms
+thread_id = 7, phase = CC_COMMIT, elapsed_time = 11372 ms
+
+phase = INDEX_READ, avg elapsed_time = 6642 ms
+phase = CC_SELECT, avg elapsed_time = 10454 ms
+phase = CC_INSERT, avg elapsed_time = 17 ms
+phase = CC_COMMIT, avg elapsed_time = 12135 ms
+**********END PHASE PROFILING REPORT**********
+
+**********BEGIN CC ABORT TIME PROFILING REPORT**********
+thread_id = 0, abort_time = 1628 ms
+thread_id = 1, abort_time = 1536 ms
+thread_id = 2, abort_time = 1501 ms
+thread_id = 3, abort_time = 1331 ms
+thread_id = 4, abort_time = 1565 ms
+thread_id = 5, abort_time = 5678 ms
+thread_id = 6, abort_time = 1844 ms
+thread_id = 7, abort_time = 1841 ms
+
+avg abort time = 2115 ms
+**********END CC ABORT TIME PROFILING REPORT**********
+
+**********BEGIN CC TS ALLOC TIME PROFILING REPORT**********
+thread_id = 0, elapsed_time = 62 ms
+thread_id = 1, elapsed_time = 62 ms
+thread_id = 2, elapsed_time = 63 ms
+thread_id = 3, elapsed_time = 62 ms
+thread_id = 4, elapsed_time = 63 ms
+thread_id = 5, elapsed_time = 62 ms
+thread_id = 6, elapsed_time = 72 ms
+thread_id = 7, elapsed_time = 70 ms
+**********END CC TS ALLOC TIME PROFILING REPORT**********
+
+**********BEGIN GAM_OPERATION PROFILING REPORT(NOT INCLUDE INDEX RELATED OPERATIONS)**********
+thread_id = 0, gam operation = GAM_READ, elapsed_time = 13044 ms
+thread_id = 0, gam operation = GAM_WRITE, elapsed_time = 652 ms
+thread_id = 0, gam operation = GAM_WLOCK, elapsed_time = 9600 ms
+thread_id = 0, gam operation = GAM_UNLOCK, elapsed_time = 519 ms
+thread_id = 0, gam operation = GAM_MALLOC, elapsed_time = 932 ms
+thread_id = 1, gam operation = GAM_READ, elapsed_time = 12979 ms
+thread_id = 1, gam operation = GAM_WRITE, elapsed_time = 656 ms
+thread_id = 1, gam operation = GAM_WLOCK, elapsed_time = 9912 ms
+thread_id = 1, gam operation = GAM_UNLOCK, elapsed_time = 518 ms
+thread_id = 1, gam operation = GAM_MALLOC, elapsed_time = 816 ms
+thread_id = 2, gam operation = GAM_READ, elapsed_time = 8676 ms
+thread_id = 2, gam operation = GAM_WRITE, elapsed_time = 671 ms
+thread_id = 2, gam operation = GAM_WLOCK, elapsed_time = 9995 ms
+thread_id = 2, gam operation = GAM_UNLOCK, elapsed_time = 556 ms
+thread_id = 2, gam operation = GAM_MALLOC, elapsed_time = 739 ms
+thread_id = 3, gam operation = GAM_READ, elapsed_time = 9165 ms
+thread_id = 3, gam operation = GAM_WRITE, elapsed_time = 652 ms
+thread_id = 3, gam operation = GAM_WLOCK, elapsed_time = 9890 ms
+thread_id = 3, gam operation = GAM_UNLOCK, elapsed_time = 536 ms
+thread_id = 3, gam operation = GAM_MALLOC, elapsed_time = 4825 ms
+thread_id = 4, gam operation = GAM_READ, elapsed_time = 8891 ms
+thread_id = 4, gam operation = GAM_WRITE, elapsed_time = 659 ms
+thread_id = 4, gam operation = GAM_WLOCK, elapsed_time = 13708 ms
+thread_id = 4, gam operation = GAM_UNLOCK, elapsed_time = 517 ms
+thread_id = 4, gam operation = GAM_MALLOC, elapsed_time = 967 ms
+thread_id = 5, gam operation = GAM_READ, elapsed_time = 9177 ms
+thread_id = 5, gam operation = GAM_WRITE, elapsed_time = 656 ms
+thread_id = 5, gam operation = GAM_WLOCK, elapsed_time = 9735 ms
+thread_id = 5, gam operation = GAM_UNLOCK, elapsed_time = 527 ms
+thread_id = 5, gam operation = GAM_MALLOC, elapsed_time = 4784 ms
+thread_id = 6, gam operation = GAM_READ, elapsed_time = 13296 ms
+thread_id = 6, gam operation = GAM_WRITE, elapsed_time = 754 ms
+thread_id = 6, gam operation = GAM_WLOCK, elapsed_time = 9061 ms
+thread_id = 6, gam operation = GAM_UNLOCK, elapsed_time = 644 ms
+thread_id = 6, gam operation = GAM_MALLOC, elapsed_time = 770 ms
+thread_id = 7, gam operation = GAM_READ, elapsed_time = 13432 ms
+thread_id = 7, gam operation = GAM_WRITE, elapsed_time = 754 ms
+thread_id = 7, gam operation = GAM_WLOCK, elapsed_time = 9056 ms
+thread_id = 7, gam operation = GAM_UNLOCK, elapsed_time = 633 ms
+thread_id = 7, gam operation = GAM_MALLOC, elapsed_time = 793 ms
+
+gam operation = GAM_READ, avg elapsed_time = 11082 ms
+gam operation = GAM_WRITE, avg elapsed_time = 681 ms
+gam operation = GAM_WLOCK, avg elapsed_time = 10119 ms
+gam operation = GAM_UNLOCK, avg elapsed_time = 556 ms
+gam operation = GAM_MALLOC, avg elapsed_time = 1828 ms
+**********END GAM_OPERATION PROFILING REPORT**********
+
+start process query
+start processing...
+execute_count=193699, abort_count=40026, abort_rate=0.206639
+elapsed time=28263ms.
+throughput=6.85345K tps.
+per-core throughput=0.856681K tps.
+**********BEGIN EXECUTION PROFILING REPORT**********
+thread_id = 0, txn_id = 1, execution_time = 25459 ms
+thread_id = 0, txn_id = 2, execution_time = 2801 ms
+thread_id = 0, execution_time_total = 28260 ms
+thread_id = 1, txn_id = 1, execution_time = 25628 ms
+thread_id = 1, txn_id = 2, execution_time = 2631 ms
+thread_id = 1, execution_time_total = 28259 ms
+thread_id = 2, txn_id = 1, execution_time = 25342 ms
+thread_id = 2, txn_id = 2, execution_time = 2918 ms
+thread_id = 2, execution_time_total = 28260 ms
+thread_id = 3, txn_id = 1, execution_time = 22268 ms
+thread_id = 3, txn_id = 2, execution_time = 5991 ms
+thread_id = 3, execution_time_total = 28259 ms
+thread_id = 4, txn_id = 1, execution_time = 25494 ms
+thread_id = 4, txn_id = 2, execution_time = 2765 ms
+thread_id = 4, execution_time_total = 28259 ms
+thread_id = 5, txn_id = 1, execution_time = 25499 ms
+thread_id = 5, txn_id = 2, execution_time = 2759 ms
+thread_id = 5, execution_time_total = 28258 ms
+thread_id = 6, txn_id = 1, execution_time = 25529 ms
+thread_id = 6, txn_id = 2, execution_time = 2730 ms
+thread_id = 6, execution_time_total = 28259 ms
+thread_id = 7, txn_id = 1, execution_time = 25416 ms
+thread_id = 7, txn_id = 2, execution_time = 2842 ms
+thread_id = 7, execution_time_total = 28258 ms
+
+avg execution_time = 28259 ms
+**********END EXECUTION PROFILING REPORT**********
+
+**********BEGIN PHASE PROFILING REPORT**********
+thread_id = 0, phase = INDEX_READ, elapsed_time = 3051 ms
+thread_id = 0, phase = CC_SELECT, elapsed_time = 12061 ms
+thread_id = 0, phase = CC_INSERT, elapsed_time = 17 ms
+thread_id = 0, phase = CC_COMMIT, elapsed_time = 11820 ms
+thread_id = 1, phase = INDEX_READ, elapsed_time = 3056 ms
+thread_id = 1, phase = CC_SELECT, elapsed_time = 8938 ms
+thread_id = 1, phase = CC_INSERT, elapsed_time = 17 ms
+thread_id = 1, phase = CC_COMMIT, elapsed_time = 14954 ms
+thread_id = 2, phase = INDEX_READ, elapsed_time = 2786 ms
+thread_id = 2, phase = CC_SELECT, elapsed_time = 8987 ms
+thread_id = 2, phase = CC_INSERT, elapsed_time = 20 ms
+thread_id = 2, phase = CC_COMMIT, elapsed_time = 15109 ms
+thread_id = 3, phase = INDEX_READ, elapsed_time = 3044 ms
+thread_id = 3, phase = CC_SELECT, elapsed_time = 11979 ms
+thread_id = 3, phase = CC_INSERT, elapsed_time = 16 ms
+thread_id = 3, phase = CC_COMMIT, elapsed_time = 11669 ms
+thread_id = 4, phase = INDEX_READ, elapsed_time = 3014 ms
+thread_id = 4, phase = CC_SELECT, elapsed_time = 12134 ms
+thread_id = 4, phase = CC_INSERT, elapsed_time = 18 ms
+thread_id = 4, phase = CC_COMMIT, elapsed_time = 11788 ms
+thread_id = 5, phase = INDEX_READ, elapsed_time = 3021 ms
+thread_id = 5, phase = CC_SELECT, elapsed_time = 12024 ms
+thread_id = 5, phase = CC_INSERT, elapsed_time = 17 ms
+thread_id = 5, phase = CC_COMMIT, elapsed_time = 11855 ms
+thread_id = 6, phase = INDEX_READ, elapsed_time = 3076 ms
+thread_id = 6, phase = CC_SELECT, elapsed_time = 12139 ms
+thread_id = 6, phase = CC_INSERT, elapsed_time = 17 ms
+thread_id = 6, phase = CC_COMMIT, elapsed_time = 11546 ms
+thread_id = 7, phase = INDEX_READ, elapsed_time = 3005 ms
+thread_id = 7, phase = CC_SELECT, elapsed_time = 8875 ms
+thread_id = 7, phase = CC_INSERT, elapsed_time = 16 ms
+thread_id = 7, phase = CC_COMMIT, elapsed_time = 14859 ms
+
+phase = INDEX_READ, avg elapsed_time = 3006 ms
+phase = CC_SELECT, avg elapsed_time = 10892 ms
+phase = CC_INSERT, avg elapsed_time = 17 ms
+phase = CC_COMMIT, avg elapsed_time = 12950 ms
+**********END PHASE PROFILING REPORT**********
+
+**********BEGIN CC ABORT TIME PROFILING REPORT**********
+thread_id = 0, abort_time = 2103 ms
+thread_id = 1, abort_time = 1897 ms
+thread_id = 2, abort_time = 1904 ms
+thread_id = 3, abort_time = 2281 ms
+thread_id = 4, abort_time = 1888 ms
+thread_id = 5, abort_time = 2002 ms
+thread_id = 6, abort_time = 2372 ms
+thread_id = 7, abort_time = 2122 ms
+
+avg abort time = 2071 ms
+**********END CC ABORT TIME PROFILING REPORT**********
+
+**********BEGIN CC TS ALLOC TIME PROFILING REPORT**********
+thread_id = 0, elapsed_time = 82 ms
+thread_id = 1, elapsed_time = 80 ms
+thread_id = 2, elapsed_time = 82 ms
+thread_id = 3, elapsed_time = 85 ms
+thread_id = 4, elapsed_time = 80 ms
+thread_id = 5, elapsed_time = 82 ms
+thread_id = 6, elapsed_time = 97 ms
+thread_id = 7, elapsed_time = 83 ms
+**********END CC TS ALLOC TIME PROFILING REPORT**********
+
+**********BEGIN GAM_OPERATION PROFILING REPORT(NOT INCLUDE INDEX RELATED OPERATIONS)**********
+thread_id = 0, gam operation = GAM_READ, elapsed_time = 12925 ms
+thread_id = 0, gam operation = GAM_WRITE, elapsed_time = 869 ms
+thread_id = 0, gam operation = GAM_WLOCK, elapsed_time = 9370 ms
+thread_id = 0, gam operation = GAM_UNLOCK, elapsed_time = 608 ms
+thread_id = 0, gam operation = GAM_MALLOC, elapsed_time = 847 ms
+thread_id = 1, gam operation = GAM_READ, elapsed_time = 9811 ms
+thread_id = 1, gam operation = GAM_WRITE, elapsed_time = 866 ms
+thread_id = 1, gam operation = GAM_WLOCK, elapsed_time = 12511 ms
+thread_id = 1, gam operation = GAM_UNLOCK, elapsed_time = 603 ms
+thread_id = 1, gam operation = GAM_MALLOC, elapsed_time = 839 ms
+thread_id = 2, gam operation = GAM_READ, elapsed_time = 9863 ms
+thread_id = 2, gam operation = GAM_WRITE, elapsed_time = 875 ms
+thread_id = 2, gam operation = GAM_WLOCK, elapsed_time = 12594 ms
+thread_id = 2, gam operation = GAM_UNLOCK, elapsed_time = 643 ms
+thread_id = 2, gam operation = GAM_MALLOC, elapsed_time = 882 ms
+thread_id = 3, gam operation = GAM_READ, elapsed_time = 12961 ms
+thread_id = 3, gam operation = GAM_WRITE, elapsed_time = 907 ms
+thread_id = 3, gam operation = GAM_WLOCK, elapsed_time = 8931 ms
+thread_id = 3, gam operation = GAM_UNLOCK, elapsed_time = 715 ms
+thread_id = 3, gam operation = GAM_MALLOC, elapsed_time = 1052 ms
+thread_id = 4, gam operation = GAM_READ, elapsed_time = 12964 ms
+thread_id = 4, gam operation = GAM_WRITE, elapsed_time = 872 ms
+thread_id = 4, gam operation = GAM_WLOCK, elapsed_time = 9355 ms
+thread_id = 4, gam operation = GAM_UNLOCK, elapsed_time = 601 ms
+thread_id = 4, gam operation = GAM_MALLOC, elapsed_time = 817 ms
+thread_id = 5, gam operation = GAM_READ, elapsed_time = 12875 ms
+thread_id = 5, gam operation = GAM_WRITE, elapsed_time = 870 ms
+thread_id = 5, gam operation = GAM_WLOCK, elapsed_time = 9396 ms
+thread_id = 5, gam operation = GAM_UNLOCK, elapsed_time = 604 ms
+thread_id = 5, gam operation = GAM_MALLOC, elapsed_time = 856 ms
+thread_id = 6, gam operation = GAM_READ, elapsed_time = 13119 ms
+thread_id = 6, gam operation = GAM_WRITE, elapsed_time = 919 ms
+thread_id = 6, gam operation = GAM_WLOCK, elapsed_time = 8775 ms
+thread_id = 6, gam operation = GAM_UNLOCK, elapsed_time = 732 ms
+thread_id = 6, gam operation = GAM_MALLOC, elapsed_time = 965 ms
+thread_id = 7, gam operation = GAM_READ, elapsed_time = 9807 ms
+thread_id = 7, gam operation = GAM_WRITE, elapsed_time = 884 ms
+thread_id = 7, gam operation = GAM_WLOCK, elapsed_time = 12243 ms
+thread_id = 7, gam operation = GAM_UNLOCK, elapsed_time = 680 ms
+thread_id = 7, gam operation = GAM_MALLOC, elapsed_time = 1040 ms
+
+gam operation = GAM_READ, avg elapsed_time = 11790 ms
+gam operation = GAM_WRITE, avg elapsed_time = 882 ms
+gam operation = GAM_WLOCK, avg elapsed_time = 10396 ms
+gam operation = GAM_UNLOCK, avg elapsed_time = 648 ms
+gam operation = GAM_MALLOC, avg elapsed_time = 912 ms
+**********END GAM_OPERATION PROFILING REPORT**********
+
+total_count=193699,total_abort_count=40026,throughput=6.85345,thread_count_=8,elapsed_time=28263
+total_count=191412,total_abort_count=39299,throughput=6.86114,thread_count_=8,elapsed_time=27898
+total_count=192428,total_abort_count=40076,throughput=7.21163,thread_count_=8,elapsed_time=26683
+==================== perf statistics summary ====================
+agg_total_count	577539
+agg_total_abort_count	119401
+abort_rate	0.206741
+per_node_elapsed_time	27614.666667
+total_throughput	20.926218
+per_node_throughput	6.975406
+per_core_throughput	0.871926
+==================== end ====================
+prepare to exit...
+over..

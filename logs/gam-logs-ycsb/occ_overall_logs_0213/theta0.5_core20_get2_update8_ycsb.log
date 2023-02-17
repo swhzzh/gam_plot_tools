@@ -1,0 +1,48 @@
+server name=lab505-158,port_no=11111
+server name=lab505-159,port_no=11111
+server name=lab505-160,port_no=11111
+server name=lab505-155,port_no=11111
+GAllocator config info: is_master=1,master_ip=10.77.110.158,master_port=12345,worker_ip=10.77.110.158,worker_port=12346
+[3793361] 13 Feb 18:03:54.664 - [worker.cc:124-Worker()] LRU eviction is enabled, max cache lines = 5033164, reserved mem size = 17179869184, cache_percentage = 0.150000, block_size = 512
+create default gallocator
+create epoch gallocator
+storage_addr=281475022798848
+epoch_addr=281474988244480
+monotone_ts_addr=281474988243968
+start population
+table_id=0, size=2.92971MB
+populate elapsed time=122ms
+source elapsed time=18ms
+start process query
+start processing...
+[3793448] 13 Feb 18:04:49.884 - [cache.cc:708-LinkLRU()] cannot link to any random lru list by trying 10 times
+[3793440] 13 Feb 18:04:49.885 - [cache.cc:708-LinkLRU()] cannot link to any random lru list by trying 10 times
+[3793443] 13 Feb 18:04:49.887 - [cache.cc:708-LinkLRU()] cannot link to any random lru list by trying 10 times
+[3793441] 13 Feb 18:04:49.891 - [cache.cc:708-LinkLRU()] cannot link to any random lru list by trying 10 times
+[3793448] 13 Feb 18:04:49.892 - [cache.cc:708-LinkLRU()] cannot link to any random lru list by trying 10 times
+execute_count=196654, abort_count=96340, abort_rate=0.489893
+elapsed time=48957ms.
+throughput=4.01687K tps.
+per-core throughput=0.200844K tps.
+start process query
+start processing...
+[3793414] 13 Feb 18:05:05.561 - [remote_request_cache.cc:651-ProcessRemoteWriteCache()] Deadlock detected
+execute_count=196010, abort_count=93064, abort_rate=0.47479
+elapsed time=42105ms.
+throughput=4.65527K tps.
+per-core throughput=0.232763K tps.
+total_count=196010,total_abort_count=93064,throughput=4.65527,thread_count_=20,elapsed_time=42105
+total_count=196972,total_abort_count=95190,throughput=4.48878,thread_count_=20,elapsed_time=43881
+total_count=196365,total_abort_count=93494,throughput=4.58187,thread_count_=20,elapsed_time=42857
+total_count=195847,total_abort_count=91490,throughput=4.65316,thread_count_=20,elapsed_time=42089
+==================== perf statistics summary ====================
+agg_total_count	785194
+agg_total_abort_count	373238
+abort_rate	0.475344
+per_node_elapsed_time	42733.000000
+total_throughput	18.379072
+per_node_throughput	4.594768
+per_core_throughput	0.229738
+==================== end ====================
+prepare to exit...
+over..

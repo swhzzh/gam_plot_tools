@@ -1,0 +1,108 @@
+server name=lab505-158,port_no=11111
+server name=lab505-159,port_no=11111
+server name=lab505-160,port_no=11111
+server name=lab505-155,port_no=11111
+GAllocator config info: is_master=1,master_ip=10.77.110.158,master_port=12345,worker_ip=10.77.110.158,worker_port=12346
+[3802954] 13 Feb 19:46:33.091 - [worker.cc:124-Worker()] LRU eviction is enabled, max cache lines = 5033164, reserved mem size = 17179869184, cache_percentage = 0.150000, block_size = 512
+create default gallocator
+create epoch gallocator
+storage_addr=281475022798848
+epoch_addr=281474988244480
+monotone_ts_addr=281474988243968
+start population
+table_id=0, size=2.92971MB
+populate elapsed time=133ms
+source elapsed time=17ms
+start process query
+start processing...
+execute_count=197188, abort_count=103220, abort_rate=0.523457
+elapsed time=52475ms.
+throughput=3.75775K tps.
+per-core throughput=0.187888K tps.
+start process query
+start processing...
+[3803021] 13 Feb 19:48:28.545 - [cache.cc:708-LinkLRU()] cannot link to any random lru list by trying 10 times
+[3803017] 13 Feb 19:48:28.558 - [cache.cc:708-LinkLRU()] cannot link to any random lru list by trying 10 times
+[3803016] 13 Feb 19:48:28.559 - [cache.cc:708-LinkLRU()] cannot link to any random lru list by trying 10 times
+[3802963] 13 Feb 19:48:28.562 - [cache.cc:708-LinkLRU()] cannot link to any random lru list by trying 10 times
+[3803022] 13 Feb 19:48:28.571 - [cache.cc:708-LinkLRU()] cannot link to any random lru list by trying 10 times
+[3803030] 13 Feb 19:48:28.571 - [cache.cc:708-LinkLRU()] cannot link to any random lru list by trying 10 times
+[3803022] 13 Feb 19:48:28.574 - [cache.cc:708-LinkLRU()] cannot link to any random lru list by trying 10 times
+[3803029] 13 Feb 19:48:28.575 - [cache.cc:708-LinkLRU()] cannot link to any random lru list by trying 10 times
+[3803030] 13 Feb 19:48:28.588 - [cache.cc:708-LinkLRU()] cannot link to any random lru list by trying 10 times
+[3803025] 13 Feb 19:48:28.589 - [cache.cc:708-LinkLRU()] cannot link to any random lru list by trying 10 times
+[3803022] 13 Feb 19:48:28.602 - [cache.cc:708-LinkLRU()] cannot link to any random lru list by trying 10 times
+[3803016] 13 Feb 19:48:28.606 - [cache.cc:708-LinkLRU()] cannot link to any random lru list by trying 10 times
+[3803028] 13 Feb 19:48:28.607 - [cache.cc:708-LinkLRU()] cannot link to any random lru list by trying 10 times
+[3803024] 13 Feb 19:48:28.611 - [cache.cc:708-LinkLRU()] cannot link to any random lru list by trying 10 times
+[3803031] 13 Feb 19:48:28.612 - [cache.cc:708-LinkLRU()] cannot link to any random lru list by trying 10 times
+[3803028] 13 Feb 19:48:28.613 - [cache.cc:708-LinkLRU()] cannot link to any random lru list by trying 10 times
+[3803023] 13 Feb 19:48:28.619 - [cache.cc:708-LinkLRU()] cannot link to any random lru list by trying 10 times
+[3803019] 13 Feb 19:48:28.625 - [cache.cc:708-LinkLRU()] cannot link to any random lru list by trying 10 times
+[3803022] 13 Feb 19:48:28.631 - [cache.cc:708-LinkLRU()] cannot link to any random lru list by trying 10 times
+[3803016] 13 Feb 19:48:28.646 - [cache.cc:708-LinkLRU()] cannot link to any random lru list by trying 10 times
+[3803017] 13 Feb 19:48:28.646 - [cache.cc:708-LinkLRU()] cannot link to any random lru list by trying 10 times
+[3803020] 13 Feb 19:48:28.647 - [cache.cc:708-LinkLRU()] cannot link to any random lru list by trying 10 times
+[3803012] 13 Feb 19:48:28.651 - [cache.cc:708-LinkLRU()] cannot link to any random lru list by trying 10 times
+[3803014] 13 Feb 19:48:28.652 - [cache.cc:708-LinkLRU()] cannot link to any random lru list by trying 10 times
+[3803026] 13 Feb 19:48:28.658 - [cache.cc:708-LinkLRU()] cannot link to any random lru list by trying 10 times
+[3803013] 13 Feb 19:48:28.664 - [cache.cc:708-LinkLRU()] cannot link to any random lru list by trying 10 times
+[3803024] 13 Feb 19:48:28.664 - [cache.cc:708-LinkLRU()] cannot link to any random lru list by trying 10 times
+[3803021] 13 Feb 19:48:28.666 - [cache.cc:708-LinkLRU()] cannot link to any random lru list by trying 10 times
+[3803027] 13 Feb 19:48:28.667 - [cache.cc:708-LinkLRU()] cannot link to any random lru list by trying 10 times
+[3803018] 13 Feb 19:48:28.670 - [cache.cc:708-LinkLRU()] cannot link to any random lru list by trying 10 times
+[3803030] 13 Feb 19:48:28.672 - [cache.cc:708-LinkLRU()] cannot link to any random lru list by trying 10 times
+[3803013] 13 Feb 19:48:28.673 - [cache.cc:708-LinkLRU()] cannot link to any random lru list by trying 10 times
+[3803028] 13 Feb 19:48:28.676 - [cache.cc:708-LinkLRU()] cannot link to any random lru list by trying 10 times
+[3803014] 13 Feb 19:48:28.678 - [cache.cc:708-LinkLRU()] cannot link to any random lru list by trying 10 times
+[3803012] 13 Feb 19:48:28.681 - [cache.cc:708-LinkLRU()] cannot link to any random lru list by trying 10 times
+[3803030] 13 Feb 19:48:28.682 - [cache.cc:708-LinkLRU()] cannot link to any random lru list by trying 10 times
+[3803012] 13 Feb 19:48:28.683 - [cache.cc:708-LinkLRU()] cannot link to any random lru list by trying 10 times
+[3803022] 13 Feb 19:48:28.686 - [cache.cc:708-LinkLRU()] cannot link to any random lru list by trying 10 times
+[3803023] 13 Feb 19:48:28.689 - [cache.cc:708-LinkLRU()] cannot link to any random lru list by trying 10 times
+[3803019] 13 Feb 19:48:28.691 - [cache.cc:708-LinkLRU()] cannot link to any random lru list by trying 10 times
+[3803016] 13 Feb 19:48:28.695 - [cache.cc:708-LinkLRU()] cannot link to any random lru list by trying 10 times
+[3803015] 13 Feb 19:48:28.695 - [cache.cc:708-LinkLRU()] cannot link to any random lru list by trying 10 times
+[3803028] 13 Feb 19:48:28.696 - [cache.cc:708-LinkLRU()] cannot link to any random lru list by trying 10 times
+[3803022] 13 Feb 19:48:28.701 - [cache.cc:708-LinkLRU()] cannot link to any random lru list by trying 10 times
+[3803027] 13 Feb 19:48:28.702 - [cache.cc:708-LinkLRU()] cannot link to any random lru list by trying 10 times
+[3803015] 13 Feb 19:48:28.704 - [cache.cc:708-LinkLRU()] cannot link to any random lru list by trying 10 times
+[3803017] 13 Feb 19:48:28.705 - [cache.cc:708-LinkLRU()] cannot link to any random lru list by trying 10 times
+[3803013] 13 Feb 19:48:28.707 - [cache.cc:708-LinkLRU()] cannot link to any random lru list by trying 10 times
+[3803017] 13 Feb 19:48:28.709 - [cache.cc:708-LinkLRU()] cannot link to any random lru list by trying 10 times
+[3803012] 13 Feb 19:48:28.710 - [cache.cc:708-LinkLRU()] cannot link to any random lru list by trying 10 times
+[3803018] 13 Feb 19:48:28.711 - [cache.cc:708-LinkLRU()] cannot link to any random lru list by trying 10 times
+[3803019] 13 Feb 19:48:28.716 - [cache.cc:708-LinkLRU()] cannot link to any random lru list by trying 10 times
+[3803019] 13 Feb 19:48:28.719 - [cache.cc:708-LinkLRU()] cannot link to any random lru list by trying 10 times
+[3803025] 13 Feb 19:48:28.720 - [cache.cc:708-LinkLRU()] cannot link to any random lru list by trying 10 times
+[3803029] 13 Feb 19:48:28.731 - [cache.cc:708-LinkLRU()] cannot link to any random lru list by trying 10 times
+[3803030] 13 Feb 19:48:28.731 - [cache.cc:708-LinkLRU()] cannot link to any random lru list by trying 10 times
+[3803021] 13 Feb 19:48:28.738 - [cache.cc:708-LinkLRU()] cannot link to any random lru list by trying 10 times
+[3803013] 13 Feb 19:48:28.742 - [cache.cc:708-LinkLRU()] cannot link to any random lru list by trying 10 times
+[3803020] 13 Feb 19:48:28.745 - [cache.cc:708-LinkLRU()] cannot link to any random lru list by trying 10 times
+[3803024] 13 Feb 19:48:28.750 - [cache.cc:708-LinkLRU()] cannot link to any random lru list by trying 10 times
+[3803025] 13 Feb 19:48:28.751 - [cache.cc:708-LinkLRU()] cannot link to any random lru list by trying 10 times
+[3803031] 13 Feb 19:48:28.754 - [cache.cc:708-LinkLRU()] cannot link to any random lru list by trying 10 times
+[3803024] 13 Feb 19:48:28.754 - [cache.cc:708-LinkLRU()] cannot link to any random lru list by trying 10 times
+[3803024] 13 Feb 19:48:28.754 - [cache.cc:708-LinkLRU()] cannot link to any random lru list by trying 10 times
+[3803012] 13 Feb 19:48:28.755 - [cache.cc:708-LinkLRU()] cannot link to any random lru list by trying 10 times
+[3803013] 13 Feb 19:48:28.756 - [cache.cc:708-LinkLRU()] cannot link to any random lru list by trying 10 times
+execute_count=197599, abort_count=102814, abort_rate=0.520314
+elapsed time=56180ms.
+throughput=3.51725K tps.
+per-core throughput=0.175862K tps.
+total_count=197599,total_abort_count=102814,throughput=3.51725,thread_count_=20,elapsed_time=56180
+total_count=194745,total_abort_count=101397,throughput=3.48263,thread_count_=20,elapsed_time=55919
+total_count=195299,total_abort_count=99835,throughput=3.53105,thread_count_=20,elapsed_time=55309
+total_count=194393,total_abort_count=95886,throughput=3.62586,thread_count_=20,elapsed_time=53613
+==================== perf statistics summary ====================
+agg_total_count	782036
+agg_total_abort_count	399932
+abort_rate	0.511398
+per_node_elapsed_time	55255.250000
+total_throughput	14.156783
+per_node_throughput	3.539196
+per_core_throughput	0.176960
+==================== end ====================
+prepare to exit...
+over..

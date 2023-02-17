@@ -1,0 +1,59 @@
+server name=lab505-158,port_no=11111
+============= tpcc_scale_params ===========
+num_warehouses=20,starting_warehouse_=1,ending_warehouse_=20
+partition_id_0
+scale_factor_=10
+num_items_=10000
+num_districts_per_warehouse_=10
+num_customers_per_district_=300
+num_new_orders_per_district_=90
+dist_ratio=1, gStandard=1, gForceRandomAccess=0, gTimeLocality=0, gReadRatio=0
+============= end ===========
+GAllocator config info: is_master=1,master_ip=10.77.110.158,master_port=12345,worker_ip=10.77.110.158,worker_port=12346
+[1642491] 10 Jan 09:00:45.391 - [worker.cc:117-Worker()] LRU eviction is enabled, max cache lines = 5033164, reserved mem size = 17179869184, cache_percentage = 0.150000, block_size = 512
+create default gallocator
+create epoch gallocator
+storage_addr=281475022798848
+epoch_addr=281474988244480
+monotone_ts_addr=281474988243968
+start population
+table_id=0, size=22.6MB
+table_id=1, size=81.8MB
+table_id=2, size=0.00288MB
+table_id=3, size=0.0304MB
+table_id=4, size=0.0026MB
+table_id=5, size=0.234MB
+table_id=6, size=2.22MB
+table_id=7, size=46.1409MB
+table_id=8, size=46.08MB
+table_id=9, size=4.14MB
+populate elapsed time=7560ms
+read/write access count
+total_read_access_count	1253324
+total_write_access_count	2784693
+total_read_ratio	0.310381
+source elapsed time=418ms
+start process query
+start processing...
+execute_count=147182, abort_count=109, abort_rate=0.000740575
+elapsed time=452ms.
+throughput=325.624K tps.
+per-core throughput=16.2812K tps.
+start process query
+start processing...
+execute_count=131737, abort_count=78, abort_rate=0.000592084
+elapsed time=387ms.
+throughput=340.406K tps.
+per-core throughput=17.0203K tps.
+total_count=131737,total_abort_count=78,throughput=340.406,thread_count_=20,elapsed_time=387
+==================== perf statistics summary ====================
+agg_total_count	131737
+agg_total_abort_count	78
+abort_rate	0.000592
+per_node_elapsed_time	387.000000
+total_throughput	340.405685
+per_node_throughput	340.405685
+per_core_throughput	17.020284
+==================== end ====================
+prepare to exit...
+over..

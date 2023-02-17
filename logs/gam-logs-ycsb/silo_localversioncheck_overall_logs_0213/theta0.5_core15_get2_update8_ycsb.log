@@ -1,0 +1,63 @@
+server name=lab505-158,port_no=11111
+server name=lab505-159,port_no=11111
+server name=lab505-160,port_no=11111
+server name=lab505-155,port_no=11111
+GAllocator config info: is_master=1,master_ip=10.77.110.158,master_port=12345,worker_ip=10.77.110.158,worker_port=12346
+[3802746] 13 Feb 19:44:44.628 - [worker.cc:124-Worker()] LRU eviction is enabled, max cache lines = 5033164, reserved mem size = 17179869184, cache_percentage = 0.150000, block_size = 512
+create default gallocator
+create epoch gallocator
+storage_addr=281475022798848
+epoch_addr=281474988244480
+monotone_ts_addr=281474988243968
+start population
+table_id=0, size=2.92971MB
+populate elapsed time=136ms
+source elapsed time=17ms
+start process query
+start processing...
+[3802771] 13 Feb 19:45:36.838 - [cache.cc:708-LinkLRU()] cannot link to any random lru list by trying 10 times
+[3802770] 13 Feb 19:45:36.855 - [cache.cc:708-LinkLRU()] cannot link to any random lru list by trying 10 times
+[3802761] 13 Feb 19:45:36.865 - [cache.cc:708-LinkLRU()] cannot link to any random lru list by trying 10 times
+[3802771] 13 Feb 19:45:36.900 - [cache.cc:708-LinkLRU()] cannot link to any random lru list by trying 10 times
+[3802765] 13 Feb 19:45:36.917 - [cache.cc:708-LinkLRU()] cannot link to any random lru list by trying 10 times
+[3802762] 13 Feb 19:45:36.973 - [cache.cc:708-LinkLRU()] cannot link to any random lru list by trying 10 times
+[3802771] 13 Feb 19:45:37.007 - [cache.cc:708-LinkLRU()] cannot link to any random lru list by trying 10 times
+[3802764] 13 Feb 19:45:37.009 - [cache.cc:708-LinkLRU()] cannot link to any random lru list by trying 10 times
+[3802759] 13 Feb 19:45:37.023 - [cache.cc:708-LinkLRU()] cannot link to any random lru list by trying 10 times
+[3802765] 13 Feb 19:45:37.024 - [cache.cc:708-LinkLRU()] cannot link to any random lru list by trying 10 times
+[3802762] 13 Feb 19:45:37.033 - [cache.cc:708-LinkLRU()] cannot link to any random lru list by trying 10 times
+[3802758] 13 Feb 19:45:37.040 - [cache.cc:708-LinkLRU()] cannot link to any random lru list by trying 10 times
+[3802766] 13 Feb 19:45:37.069 - [cache.cc:708-LinkLRU()] cannot link to any random lru list by trying 10 times
+[3802770] 13 Feb 19:45:37.074 - [cache.cc:708-LinkLRU()] cannot link to any random lru list by trying 10 times
+[3802766] 13 Feb 19:45:37.097 - [cache.cc:708-LinkLRU()] cannot link to any random lru list by trying 10 times
+[3802763] 13 Feb 19:45:37.113 - [cache.cc:708-LinkLRU()] cannot link to any random lru list by trying 10 times
+[3802760] 13 Feb 19:45:37.116 - [cache.cc:708-LinkLRU()] cannot link to any random lru list by trying 10 times
+[3802767] 13 Feb 19:45:37.117 - [cache.cc:708-LinkLRU()] cannot link to any random lru list by trying 10 times
+[3802769] 13 Feb 19:45:37.122 - [cache.cc:708-LinkLRU()] cannot link to any random lru list by trying 10 times
+[3802770] 13 Feb 19:45:37.126 - [cache.cc:708-LinkLRU()] cannot link to any random lru list by trying 10 times
+[3802768] 13 Feb 19:45:37.136 - [cache.cc:708-LinkLRU()] cannot link to any random lru list by trying 10 times
+execute_count=193354, abort_count=81618, abort_rate=0.422115
+elapsed time=46193ms.
+throughput=4.18579K tps.
+per-core throughput=0.279052K tps.
+start process query
+start processing...
+execute_count=189187, abort_count=80509, abort_rate=0.42555
+elapsed time=44619ms.
+throughput=4.24005K tps.
+per-core throughput=0.28267K tps.
+total_count=189187,total_abort_count=80509,throughput=4.24005,thread_count_=15,elapsed_time=44619
+total_count=192236,total_abort_count=79817,throughput=4.26594,thread_count_=15,elapsed_time=45063
+total_count=191311,total_abort_count=79299,throughput=4.29343,thread_count_=15,elapsed_time=44559
+total_count=189528,total_abort_count=77342,throughput=4.38357,thread_count_=15,elapsed_time=43236
+==================== perf statistics summary ====================
+agg_total_count	762262
+agg_total_abort_count	316967
+abort_rate	0.415824
+per_node_elapsed_time	44369.250000
+total_throughput	17.182994
+per_node_throughput	4.295748
+per_core_throughput	0.286383
+==================== end ====================
+prepare to exit...
+over..

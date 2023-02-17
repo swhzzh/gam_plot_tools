@@ -1,0 +1,170 @@
+server name=lab505-158,port_no=11111
+============= tpcc_scale_params ===========
+num_warehouses=1,starting_warehouse_=1,ending_warehouse_=1
+partition_id_0
+scale_factor_=10
+num_items_=10000
+num_districts_per_warehouse_=10
+num_customers_per_district_=300
+num_new_orders_per_district_=90
+dist_ratio=1, gStandard=1, gForceRandomAccess=0, gTimeLocality=0, gReadRatio=0
+============= end ===========
+GAllocator config info: is_master=1,master_ip=10.77.110.158,master_port=12345,worker_ip=10.77.110.158,worker_port=12346
+[1639577] 10 Jan 08:45:31.193 - [worker.cc:117-Worker()] LRU eviction is enabled, max cache lines = 5033164, reserved mem size = 17179869184, cache_percentage = 0.150000, block_size = 512
+create default gallocator
+create epoch gallocator
+storage_addr=281475022798848
+epoch_addr=281474988244480
+monotone_ts_addr=281474988243968
+start population
+table_id=0, size=1.13MB
+table_id=1, size=4.09MB
+table_id=2, size=0.000144MB
+table_id=3, size=0.00152MB
+table_id=4, size=0.00013MB
+table_id=5, size=0.0117MB
+table_id=6, size=0.111MB
+table_id=7, size=2.3137MB
+table_id=8, size=2.304MB
+table_id=9, size=0.207MB
+populate elapsed time=372ms
+**********BEGIN EXECUTION PROFILING REPORT**********
+
+avg execution_time = 0 ms
+**********END EXECUTION PROFILING REPORT**********
+
+**********BEGIN PHASE PROFILING REPORT**********
+thread_id = 0, phase = INDEX_INSERT_LOCK, elapsed_time = 35 ms
+thread_id = 0, phase = INDEX_INSERT_MUTATE, elapsed_time = 115 ms
+thread_id = 0, phase = INDEX_INSERT_GALLOCATE, elapsed_time = 18 ms
+
+phase = INDEX_INSERT_LOCK, avg elapsed_time = 35 ms
+phase = INDEX_INSERT_MUTATE, avg elapsed_time = 115 ms
+phase = INDEX_INSERT_GALLOCATE, avg elapsed_time = 18 ms
+**********END PHASE PROFILING REPORT**********
+
+**********BEGIN CC ABORT TIME PROFILING REPORT**********
+
+avg abort time = 0 ms
+**********END CC ABORT TIME PROFILING REPORT**********
+
+**********BEGIN CC TS ALLOC TIME PROFILING REPORT**********
+
+avg cc_ts_alloc_time = 0 ms
+**********END CC TS ALLOC TIME PROFILING REPORT**********
+
+**********BEGIN GAM_OPERATION PROFILING REPORT(NOT INCLUDE INDEX RELATED OPERATIONS)**********
+
+**********END GAM_OPERATION PROFILING REPORT**********
+
+read/write access count
+total_read_access_count	1241969
+total_write_access_count	2766193
+total_read_ratio	0.30986
+source elapsed time=317ms
+start process query
+start processing...
+execute_count=200000, abort_count=0, abort_rate=0
+elapsed time=7087ms.
+throughput=28.2207K tps.
+per-core throughput=28.2207K tps.
+**********BEGIN EXECUTION PROFILING REPORT**********
+thread_id = 0, txn_id = 1, execution_time = 6001 ms
+thread_id = 0, txn_id = 2, execution_time = 1071 ms
+thread_id = 0, execution_time_total = 7072 ms
+
+avg execution_time = 7072 ms
+**********END EXECUTION PROFILING REPORT**********
+
+**********BEGIN PHASE PROFILING REPORT**********
+thread_id = 0, phase = INDEX_READ, elapsed_time = 1848 ms
+thread_id = 0, phase = CC_SELECT, elapsed_time = 1287 ms
+thread_id = 0, phase = CC_COMMIT, elapsed_time = 3471 ms
+
+phase = INDEX_READ, avg elapsed_time = 1848 ms
+phase = CC_SELECT, avg elapsed_time = 1287 ms
+phase = CC_COMMIT, avg elapsed_time = 3471 ms
+**********END PHASE PROFILING REPORT**********
+
+**********BEGIN CC ABORT TIME PROFILING REPORT**********
+
+avg abort time = 0 ms
+**********END CC ABORT TIME PROFILING REPORT**********
+
+**********BEGIN CC TS ALLOC TIME PROFILING REPORT**********
+thread_id = 0, cc_ts_alloc_time = 128 ms
+
+avg cc_ts_alloc_time = 128 ms
+**********END CC TS ALLOC TIME PROFILING REPORT**********
+
+**********BEGIN GAM_OPERATION PROFILING REPORT(NOT INCLUDE INDEX RELATED OPERATIONS)**********
+thread_id = 0, gam operation = GAM_READ, elapsed_time = 1611 ms
+thread_id = 0, gam operation = GAM_WRITE, elapsed_time = 503 ms
+thread_id = 0, gam operation = GAM_WLOCK, elapsed_time = 645 ms
+thread_id = 0, gam operation = GAM_UNLOCK, elapsed_time = 1246 ms
+
+gam operation = GAM_READ, avg elapsed_time = 1611 ms
+gam operation = GAM_WRITE, avg elapsed_time = 503 ms
+gam operation = GAM_WLOCK, avg elapsed_time = 645 ms
+gam operation = GAM_UNLOCK, avg elapsed_time = 1246 ms
+**********END GAM_OPERATION PROFILING REPORT**********
+
+start process query
+start processing...
+execute_count=200000, abort_count=0, abort_rate=0
+elapsed time=6829ms.
+throughput=29.2869K tps.
+per-core throughput=29.2869K tps.
+**********BEGIN EXECUTION PROFILING REPORT**********
+thread_id = 0, txn_id = 1, execution_time = 5801 ms
+thread_id = 0, txn_id = 2, execution_time = 1011 ms
+thread_id = 0, execution_time_total = 6812 ms
+
+avg execution_time = 6812 ms
+**********END EXECUTION PROFILING REPORT**********
+
+**********BEGIN PHASE PROFILING REPORT**********
+thread_id = 0, phase = INDEX_READ, elapsed_time = 1730 ms
+thread_id = 0, phase = CC_SELECT, elapsed_time = 1216 ms
+thread_id = 0, phase = CC_COMMIT, elapsed_time = 3380 ms
+
+phase = INDEX_READ, avg elapsed_time = 1730 ms
+phase = CC_SELECT, avg elapsed_time = 1216 ms
+phase = CC_COMMIT, avg elapsed_time = 3380 ms
+**********END PHASE PROFILING REPORT**********
+
+**********BEGIN CC ABORT TIME PROFILING REPORT**********
+
+avg abort time = 0 ms
+**********END CC ABORT TIME PROFILING REPORT**********
+
+**********BEGIN CC TS ALLOC TIME PROFILING REPORT**********
+thread_id = 0, cc_ts_alloc_time = 130 ms
+
+avg cc_ts_alloc_time = 130 ms
+**********END CC TS ALLOC TIME PROFILING REPORT**********
+
+**********BEGIN GAM_OPERATION PROFILING REPORT(NOT INCLUDE INDEX RELATED OPERATIONS)**********
+thread_id = 0, gam operation = GAM_READ, elapsed_time = 1546 ms
+thread_id = 0, gam operation = GAM_WRITE, elapsed_time = 520 ms
+thread_id = 0, gam operation = GAM_WLOCK, elapsed_time = 662 ms
+thread_id = 0, gam operation = GAM_UNLOCK, elapsed_time = 1099 ms
+
+gam operation = GAM_READ, avg elapsed_time = 1546 ms
+gam operation = GAM_WRITE, avg elapsed_time = 520 ms
+gam operation = GAM_WLOCK, avg elapsed_time = 662 ms
+gam operation = GAM_UNLOCK, avg elapsed_time = 1099 ms
+**********END GAM_OPERATION PROFILING REPORT**********
+
+total_count=200000,total_abort_count=0,throughput=29.2869,thread_count_=1,elapsed_time=6829
+==================== perf statistics summary ====================
+agg_total_count	200000
+agg_total_abort_count	0
+abort_rate	0.000000
+per_node_elapsed_time	6829.000000
+total_throughput	29.286865
+per_node_throughput	29.286865
+per_core_throughput	29.286865
+==================== end ====================
+prepare to exit...
+over..
